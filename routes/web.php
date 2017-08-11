@@ -28,3 +28,14 @@ Route::get('search', 'MockController@search');
 Route::get('user', 'MockController@user');
 Route::get('following', 'MockController@following');
 Route::get('followers', 'MockController@followers');
+
+Route::put('updateAccount','MockController@updateAccount')->name('updateAccount');
+Route::put('updateProfile', 'MockController@updateProfile')->name('updateProfile');
+Route::post('tweet', 'TweetController@store');
+
+
+
+//Route::get('updateAccount/{updateAccount}/edit', 'accountController@updateAccount')->name('updateAccount.edit');
+//Route::put('updateAccount/{updateAccount}', 'accountController@updateAccount');
+
+//{{$tweets->user_id}}

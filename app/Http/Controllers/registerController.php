@@ -3,12 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Tweet;
-use App\Models\User;
 
-
-
-class HomeController extends Controller
+class registerController extends Controller
 {
     /**
      * @return mixed
@@ -20,15 +16,6 @@ class HomeController extends Controller
 
     public function index()
     {
-        $user = \Auth::user();
-
-        $tweets =$user->tweets;
-
-        return view('home', ['user' => $user, 'tweets' => $tweets]);
-
+        return view('home');
     }
-
-
-
-
 }

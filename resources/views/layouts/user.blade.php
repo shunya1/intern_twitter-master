@@ -22,7 +22,7 @@
 
 @include('layouts.fragments.nav')
 
-@include('layouts.fragments.header')
+@include('layouts.fragments.header',$user)
 
 <div class="container pt-4">
     <div class="row">

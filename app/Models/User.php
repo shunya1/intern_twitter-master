@@ -46,6 +46,7 @@ class User extends Authenticatable
         'password',
         'display_name',
         'avatar',
+        'description'
     ];
 
     /**
@@ -57,4 +58,9 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public function tweets()
+    {
+        return $this->hasMany(Tweet::class);
+    }
 }

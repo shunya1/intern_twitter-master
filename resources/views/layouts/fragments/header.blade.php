@@ -2,8 +2,8 @@
     <div class="container">
         <div class="container-inner">
             <img class="rounded-circle media-object" src="{{ asset('images/no-thumb.png') }}">
-            <h3 class="profile-header-user">snicmakino</h3>
-            <p class="profile-header-bio">Software engineer（JavaとかDBとかAWSとか） 空前絶後のKotlinブーム中</p>
+            <h3 class="profile-header-user">{{$user->display_name}}</h3>
+            <p class="profile-header-bio">{{$user->description}}</p>
         </div>
     </div>
 

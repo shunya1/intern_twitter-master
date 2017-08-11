@@ -7,11 +7,15 @@
 
     <div class="col-lg-6">
         <ul class="list-group media-list-stream mb-4">
-            @include('fragments.tweet')
+            @foreach($tweets as $tweet)
+              @include('fragments.tweet', $tweet)
+            @endforeach
         </ul>
     </div>
 
     <div class="col-lg-3">
-        @include('fragments.footer')
+
+          @include('fragments.footer')
+
     </div>
 @endsection
